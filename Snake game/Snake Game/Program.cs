@@ -4,7 +4,7 @@ namespace Snake_Game
     {
         static void Main(string[] args)
         {
-            // SNAKE GAME
+            // MAIN CODE
             char BG = '1';
             int height = 5;
             int width = 15;
