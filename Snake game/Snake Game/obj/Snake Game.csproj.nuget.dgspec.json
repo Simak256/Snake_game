@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\plule\\Desktop\\SnakeGame\\Snake game\\Snake Game\\Snake Game.csproj": {}
+    "C:\\Users\\plule\\source\\repos\\SnakeGame\\Snake game\\Snake Game\\Snake Game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\plule\\Desktop\\SnakeGame\\Snake game\\Snake Game\\Snake Game.csproj": {
+    "C:\\Users\\plule\\source\\repos\\SnakeGame\\Snake game\\Snake Game\\Snake Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\plule\\Desktop\\SnakeGame\\Snake game\\Snake Game\\Snake Game.csproj",
+        "projectUniqueName": "C:\\Users\\plule\\source\\repos\\SnakeGame\\Snake game\\Snake Game\\Snake Game.csproj",
         "projectName": "Snake Game",
-        "projectPath": "C:\\Users\\plule\\Desktop\\SnakeGame\\Snake game\\Snake Game\\Snake Game.csproj",
+        "projectPath": "C:\\Users\\plule\\source\\repos\\SnakeGame\\Snake game\\Snake Game\\Snake Game.csproj",
         "packagesPath": "C:\\Users\\plule\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\plule\\Desktop\\SnakeGame\\Snake game\\Snake Game\\obj\\",
+        "outputPath": "C:\\Users\\plule\\source\\repos\\SnakeGame\\Snake game\\Snake Game\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,3 +1,6 @@
+using System.ComponentModel.Design;
+using System.Reflection;
+
 namespace Snake_Game
 {
     internal class Program
@@ -6,8 +9,8 @@ namespace Snake_Game
         {
             // MAIN CODE
             char BG = '1';
-            int height = 5;
-            int width = 15;
+            int height = 6;
+            int width = 13;
             var map = MakeMap(height, width, BG);
 
             Random random = new Random();
@@ -22,13 +25,13 @@ namespace Snake_Game
             bool paused = false;
 
             int points = 0;
-            int apples;
             int xApple = random.Next(0, map.GetLength(1));
             int yApple = random.Next(0, map.GetLength(0));
 
             while (true)
             {
                 RenderMap(map, xApple, yApple);
+                GameWon(points, height, width);
                 Console.WriteLine("Points: " + points);
 
                 if (Console.KeyAvailable)
@@ -53,6 +56,8 @@ namespace Snake_Game
                             break;
                     }
                 }
+
+                
 
                 if (paused)
                 {
@@ -84,7 +89,7 @@ namespace Snake_Game
                     Environment.Exit(0);
                 }
 
-                
+
                 ChangeMap(map, x, y, snake, ref points, ref xApple, ref yApple, random, BG);
             }
         }
@@ -144,7 +149,14 @@ namespace Snake_Game
                 }
                 Console.WriteLine();
             }
-
+        }
+        public static void GameWon(int points, int height, int width)
+        {
+            if (points + 1 == height*width)
+            {
+                Console.WriteLine("You win! ");
+                Environment.Exit(0);
+            }
         }
     }
 }
