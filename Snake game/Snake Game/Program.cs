@@ -8,7 +8,7 @@ namespace Snake_Game
         static void Main(string[] args)
         {
             // MAIN CODE
-            char BG = '1';
+            char BG = '-';
             int height = 6;
             int width = 13;
             var map = MakeMap(height, width, BG);
@@ -123,6 +123,7 @@ namespace Snake_Game
                 if (x < map.GetLength(1) - 1 && y < map.GetLength(0) - 1) { snake.Add((x+1, y+1)); }
                 else if (x < map.GetLength(1) - 1 && y !< map.GetLength(0) - 1) {  snake.Add((x+1,y)); }
                 else if (x !< map.GetLength(1) - 1 && y < map.GetLength(0) - 1) { snake.Add((x, y + 1)); }
+                else { snake.Add((x, y)); }
                 points++;
                 xApple = random.Next(0, map.GetLength(1));
                 yApple = random.Next(0, map.GetLength(0));
